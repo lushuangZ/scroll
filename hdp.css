@@ -1,0 +1,114 @@
+ *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            color: #fff;
+        }
+        /* 沾满全屏 */
+        html, body, .wrapper {
+            position: relative;
+        }
+        html, body, .wrapper .slider_list{
+            width: 100%;
+            height: 100%;
+        }
+        .slider_list .slider{
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-sizing: border-box;
+            /* IE6混杂模式盒模型 */
+            padding: 200px;
+            
+        }
+        .slider:nth-of-type(1){
+            background-image:url(./images/bg-1.jpg)
+        }
+        .slider:nth-of-type(2){
+            display: none;
+            background-image:url(./images/bg-2.jpg)
+        }
+        .slider:nth-of-type(3){
+            display: none;
+            background-image:url(./images/bg-3.jpg)
+        }
+        .box{
+            padding: 200px;
+        }
+        /* 消除浮动 */
+        /* .box::after{
+            content:'';
+            display: block;
+            clear: both;
+        } */
+        .slider .cont {
+            float: left;
+            /* margin-left: 200px; */
+            width:40%;
+            
+        }
+        .slider .cont p{
+            overflow: hidden;
+            display:-webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .slider img{
+            float: right;
+            /* margin-right: 200px; */
+            width:40%;
+        }
+       /* .slider:nth-of-type(2) img,.slider:nth-of-type(3){
+           width:0%;
+       } */
+        /* .box::after{
+            contain: "";
+            display: block;
+            clear: both;
+        } */
+        .btn {
+            position: absolute;;
+            height: 40px;
+            top:50%;
+            margin-top: -20px;
+            width: 100%;
+        }
+        .btn div{
+            width:30px;
+            height: 40px;
+        }
+        .btn .prev_btn{
+            float: left;
+            margin-left: 100px;
+            background-image: url('./images/left-btn.png');
+        }
+        .btn .next_btn{
+            float: right;
+            margin-right: 100px;
+            background-image: url(./images/right-btn.png)
+        }
+        .order{
+            position: absolute;
+            bottom:100px;
+            width: 100%;
+            height:20px; 
+        }
+        ul {
+            text-align: center;
+        }
+        .order ul .active{
+            background: #fff;
+        }
+        .order ul li {
+            display: inline-block;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            background: #888;
+            text-indent: -1000px;
+            overflow: hidden;
+            margin: 0 5px;
+            /* text-align: center; */
+        }
